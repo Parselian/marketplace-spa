@@ -1,0 +1,41 @@
+:root {
+    --font-family: 'Noto Sans', sans-serif, --apple-system;
+    --bg: #E5E5E5;
+    --alt-bg: #FFF;
+    --accent-bg: #F9F8FF;
+    --proposal-bg: #C8F8E4;
+    --counter-bg: #B3C0D9;
+    --default-text: #3B434E;
+    --alt-text: #FFF;
+    --inactive-text: #E2E2E2;
+    --placeholder-text: #A4A4A4;
+    --proposal-text: #1DC37E;
+    --menu-text: #787D85;
+    --accent: #7653FC;
+    --disadvantages: #FC836D;
+    --alert: #DE0000;
+    --vip-color: #DCB44E;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--page-bg);
+    font-family: var(--font-family);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
