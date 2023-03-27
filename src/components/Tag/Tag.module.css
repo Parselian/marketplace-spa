@@ -1,0 +1,52 @@
+.tag {
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: 14px;
+}
+
+.tag:not(:last-child) {
+    margin-right: 5px;
+}
+
+.inactive {
+    padding: 5px 10px;
+    background-color: var(--counter-bg);
+    color: var(--alt-text);
+    font-weight: 600;
+}
+
+.sale {
+    padding: 5px 8px;
+    background-color: var(--proposal-bg);
+    color: var(--proposal-text);
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.ghost {
+    padding: 5px 12px;
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.alert {
+    padding: 3px 8px;
+    background-color: var(--alert);
+    color: var(--alt-text);
+    font-weight: 600;
+}
+
+.normal {
+    padding: 3px 8px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 500;
+}
