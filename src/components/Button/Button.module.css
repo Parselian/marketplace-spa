@@ -1,0 +1,33 @@
+.button {
+    padding: 11px;
+    border: 1px solid transparent;
+    background-color: var(--alt-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    transition: .3s;
+}
+
+.button-normal {
+    background-color: var(--accent);
+    color: var(--alt-text);
+}
+
+.button-normal:hover {
+    border-color: var(--border-color);
+    background-color: var(--alt-text);
+    color: var(--accent);
+}
+
+.button-transparent {
+    border-color: var(--border-color);
+    color: var(--default-text);
+}
+
+.button-transparent:hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: var(--alt-text);
+}

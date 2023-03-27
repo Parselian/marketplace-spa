@@ -15,6 +15,7 @@
     --disadvantages: #FC836D;
     --alert: #DE0000;
     --vip-color: #DCB44E;
+    --border-color: #EBEBEB;
 }
 
 
@@ -31,7 +32,8 @@ body {
 }
 
 body {
-    background-color: var(--page-bg);
+    background-color: var(--bg);
+    color: var(--default-text);
     font-family: var(--font-family);
 }
 
