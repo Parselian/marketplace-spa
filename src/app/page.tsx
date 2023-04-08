@@ -1,9 +1,13 @@
-import HComp from "@/components/HComp/HComp";
-import Button from "@/components/Button/Button";
-import PComp from "@/components/PComp/PComp";
-import Tag from "@/components/Tag/Tag";
+'use client'
+import HComp from "@/components/HComp/HComp"
+import Button from "@/components/Button/Button"
+import PComp from "@/components/PComp/PComp"
+import Tag from "@/components/Tag/Tag"
+import Rating from "@/components/Rating/Rating"
+import {useState} from "react"
 
 export default function Home() {
+    const [rating, setRating] = useState(4)
     return (
         <main>
             <HComp type='h1'>Wassup Next!</HComp>
@@ -34,6 +38,7 @@ export default function Home() {
             <Tag type={'sale'} href="https://ya.ru">text</Tag>
             <Tag type={'alert'} size='m'>text</Tag>
             <Tag type={'normal'}>text</Tag>
+            <Rating isDisabled={false} current={rating} onUpdate={setRating}/>
         </main>
     )
 }

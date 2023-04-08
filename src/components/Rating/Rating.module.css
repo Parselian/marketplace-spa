@@ -1,0 +1,16 @@
+.rating{
+    display: flex;
+}
+
+.star {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.star svg {
+    fill: var(--inactive-text)
+}
+
+.active svg {
+    fill: var(--accent)
+}
