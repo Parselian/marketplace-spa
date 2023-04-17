@@ -5,11 +5,14 @@ import PComp from "@/components/PComp/PComp"
 import Tag from "@/components/Tag/Tag"
 import Rating from "@/components/Rating/Rating"
 import {useState} from "react"
+import Layout from "@/layout/Layout"
+import withLayout from "@/layout/Layout";
 
-export default function Home() {
+function Home() {
     const [rating, setRating] = useState(4)
+
     return (
-        <main>
+        <>
             <HComp type='h1'>Wassup Next!</HComp>
             <Button type='normal' className='test-class' arrow='down'>Test button</Button>
             <Button type='transparent' arrow='right'>Test button</Button>
@@ -39,6 +42,8 @@ export default function Home() {
             <Tag type={'alert'} size='m'>text</Tag>
             <Tag type={'normal'}>text</Tag>
             <Rating isDisabled={false} current={rating} onUpdate={setRating}/>
-        </main>
+        </>
     )
 }
+
+export default withLayout(Home)
