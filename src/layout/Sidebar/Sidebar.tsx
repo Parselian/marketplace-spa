@@ -1,8 +1,12 @@
 import {SidebarProps} from "@/layout/Sidebar/Sidebar.props"
+import s from "./Sidebar.module.css"
+import Logo from "../../../public/logo.svg"
+import cn from "classnames"
 
-const Sidebar = ({...props}:SidebarProps): JSX.Element => {
+const Sidebar = ({className, ...props}:SidebarProps): JSX.Element => {
     return (
-        <div {...props}>
+        <div className={cn(className, s.sidebar)} {...props}>
+            <Logo/>
             Sidebar
         </div>
     )
